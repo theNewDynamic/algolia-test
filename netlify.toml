@@ -1,5 +1,5 @@
 [build]
-  command = "hugo && npm run index-and-send"
+  command = "hugo"
   publish = "public"
 
 [context.production.environment]
