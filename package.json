@@ -9,7 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "index": "hugo-algolia"
+     "index": "hugo-algolia",
+     "index-and-send": "hugo-algolia -s"
   },
   "repository": {
     "type": "git",

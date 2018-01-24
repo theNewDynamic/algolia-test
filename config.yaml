@@ -1,5 +1,5 @@
 
 algolia:
-  index: "index-name"
-  key: "[your API key]"
-  appID: "[your app id]"
+  index: "test_hugoalgolia"
+  key: "c023a8822dda231cbc7a3921e16abba9"
+  appID: "Y5U3SE5SW2"
