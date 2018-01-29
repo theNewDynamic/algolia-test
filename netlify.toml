@@ -1,5 +1,5 @@
 [build]
-  command = "hugo"
+  command = "npm run hugo"
   publish = "public"
 
 [context.production.environment]
