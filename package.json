@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "hugo": "hugo",
      "index": "hugo && hugo-algolia",
-     "index-and-send": "hugo-algolia -s"
+     "search": "hugo && hugo-algolia -s"
   },
   "repository": {
     "type": "git",
