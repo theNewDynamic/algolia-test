@@ -8,6 +8,17 @@ SectionPagesMenu: main
 Paginate: 3
 googleAnalytics: ''
 enableRobotsTXT: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+    - JSON
+  section:
+    - HTML
+    - JSON
 algolia:
   index: test_hugoalgolia
   key: c023a8822dda231cbc7a3921e16abba9
