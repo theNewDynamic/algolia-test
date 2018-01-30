@@ -22,7 +22,7 @@ outputs:
     - JSON
 algolia:
   index: testhugoagolia_7
-  key: c023a8822dda231cbc7a3921e16abba9
+  key: 
   appID: Y5U3SE5SW2
 sitemap:
   changefreq: monthly

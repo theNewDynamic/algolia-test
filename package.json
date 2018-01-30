@@ -10,9 +10,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "hugo": "hugo",
-    "hugo-algolia" : "hugo-algolia",
-     "index": "hugo-algolia",
-     "build": "hugo"
+    "hugo-algolia": "mkdir public && hugo-algolia -s",
+    "index": "hugo-algolia -m 'tags'",
+    "build": "npm run hugo || npm run hugo-algolia"
   },
   "repository": {
     "type": "git",
