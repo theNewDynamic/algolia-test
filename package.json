@@ -13,7 +13,7 @@
     "mkd": "mkdir public",
     "hugo-algolia": "hugo-algolia -s",
     "index": "hugo-algolia -m 'tags'",
-    "build": "npm run hugo | npm run hugo-algolia -s"
+    "build": "npm run hugo"
   },
   "repository": {
     "type": "git",
