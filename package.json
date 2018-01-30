@@ -4,6 +4,8 @@
   "description": "This a site with example content utilizing a theme that's a submodule in the themes directory.",
   "main": "index.js",
   "dependencies": {
+    "algoliasearch": "^3.24.9",
+    "fs": "0.0.1-security",
     "hugo-algolia": "^1.2.11"
   },
   "devDependencies": {},
@@ -11,9 +13,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "hugo": "hugo",
     "mkd": "mkdir public",
-    "hugo-algolia": "hugo-algolia -s",
+    "hugo-algolia": "hugo-algolia",
     "index": "hugo-algolia -m 'tags'",
-    "build": "npm run hugo"
+    "build": "hugo && node public/algolia-index.js"
   },
   "repository": {
     "type": "git",
