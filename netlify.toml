@@ -1,10 +1,10 @@
 [build]
-  command = "npm run build"
+  command = "npm run hugo-algolia"
   publish = "public"
 
 [context.production.environment]
   HUGO_VERSION = "0.34"
   HUGO_ENV = "development"
 
-# https://www.netlify.com/docs/continuous-deployment/#deploy-contexts
+# https://www.netlify.com/ cryptozombies.io docs/continuous-deployment/#deploy-contexts
 # https://www.netlify.com/blog/2017/04/11/netlify-plus-hugo-0.20-and-beyond/
