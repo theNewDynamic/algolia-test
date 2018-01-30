@@ -1,3 +1,4 @@
+---
 title: Ananke
 baseURL: 'https://gohugo-ananke-theme-demo.netlify.com/'
 languageCode: en
@@ -20,7 +21,7 @@ outputs:
     - HTML
     - JSON
 algolia:
-  index: test_hugoalgolia
+  index: testhugoagolia_7
   key: c023a8822dda231cbc7a3921e16abba9
   appID: Y5U3SE5SW2
 sitemap:
