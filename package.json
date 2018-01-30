@@ -12,7 +12,7 @@
     "hugo": "hugo",
     "hugo-algolia" : "hugo-algolia",
      "index": "hugo-algolia",
-     "build": "hugo && hugo-algolia -s"
+     "build": "hugo"
   },
   "repository": {
     "type": "git",
