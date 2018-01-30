@@ -21,8 +21,8 @@ outputs:
     - HTML
     - JSON
 algolia:
-  index: testhugoagolia_7
-  key: 
+  index: testhugoagolia_8
+  key:
   appID: Y5U3SE5SW2
 sitemap:
   changefreq: monthly
