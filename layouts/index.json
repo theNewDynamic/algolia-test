@@ -1,9 +1,6 @@
 {{- $.Scratch.Add "index" slice -}}
-{{/* where .Site.Pages "Type" "not in"  (slice "page" "json")  */}}
-{{$content := where .Site.RegularPages ".Section" "not in"  (slice "links" "related_coverage" "backstory" "playlist") }}
+{{$content := where .Site.RegularPages "Type" "not in"  (slice "page" "json") }}
 {{- range $content -}}
-{{- $.Scratch.Add "index" (dict "Section" .Section "title" .Title "objectID" .File.Path "tags" .Params.tags "content" .Plain) -}}
+{{- $.Scratch.Add "index" (dict "Section" .Section "title" .Title "objectID" .File.Path "tags" .Params.tags "description" .Params.description "content" .Plain) -}}
 {{- end -}}
-
-
 {{- $.Scratch.Get "index" | jsonify -}}
