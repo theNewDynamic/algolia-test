@@ -15,7 +15,7 @@
     "mkd": "mkdir public",
     "hugo-algolia": "hugo-algolia",
     "index": "hugo-algolia -s",
-    "build": "hugo && node hugo-algolia -s"
+    "build": "hugo && hugo-algolia"
   },
   "repository": {
     "type": "git",
