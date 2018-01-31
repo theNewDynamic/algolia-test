@@ -8,6 +8,7 @@ DefaultContentLanguage: en
 SectionPagesMenu: main
 Paginate: 3
 googleAnalytics: ''
+enableGitInfo: true
 enableRobotsTXT: true
 outputs:
   home:
