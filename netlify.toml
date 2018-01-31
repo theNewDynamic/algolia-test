@@ -3,15 +3,15 @@
   command = "npm run build"
 
 [context.production.environment]
-  HUGO_VERSION = "0.30.2"
+  HUGO_VERSION = "0.34"
   HUGO_ENV = "dev"
 
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.30.2"
+  HUGO_VERSION = "0.34"
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.30.2"
+  HUGO_VERSION = "0.34"
 
 
 
