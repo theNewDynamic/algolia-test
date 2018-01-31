@@ -2,9 +2,12 @@
   publish = "public"
   command = "npm run build"
 
+
 [context.production.environment]
   HUGO_VERSION = "0.34"
   HUGO_ENV = "dev"
+  ALGOLIA_APPLICATION_ID = "Y5U3SE5SW2"
+  indexId = "test"
 
 
 [context.deploy-preview.environment]
