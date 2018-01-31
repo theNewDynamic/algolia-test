@@ -7,7 +7,7 @@
   HUGO_VERSION = "0.34"
   HUGO_ENV = "dev"
   ALGOLIA_APPLICATION_ID = "Y5U3SE5SW2"
-  ALGOLIA_INDEX_ID = "test2"
+  ALGOLIA_INDEX_ID = "test3"
 
 
 [context.deploy-preview.environment]
