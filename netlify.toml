@@ -5,6 +5,7 @@
 [context.production.environment]
   HUGO_VERSION = "0.34"
   HUGO_ENV = "development"
+  ALGOLIA_WRITE_KEY = "c023a8822dda231cbc7a3921e16abba9"
 
-# https://www.netlify.com/ cryptozombies.io docs/continuous-deployment/#deploy-contexts
+# https://www.netlify.com/docs/continuous-deployment/#deploy-contexts
 # https://www.netlify.com/blog/2017/04/11/netlify-plus-hugo-0.20-and-beyond/
