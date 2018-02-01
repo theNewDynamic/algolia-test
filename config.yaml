@@ -37,3 +37,6 @@ params:
   youtube: ''
   background_color_class: bg-black
   featured_image: /images/gohugo-default-sample-hero-image.jpg
+  dev:
+    js_path: /static/dist/js
+    css_path: /static/dist/css

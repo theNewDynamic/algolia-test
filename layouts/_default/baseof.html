@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
-  <head>
+  <head cl>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
@@ -16,7 +16,6 @@
     {{ else }}
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     {{ end }}
-
 
     {{$stylesheet := readDir ($.Param "dev.css_path")}}
       {{range $stylesheet}}
@@ -41,14 +40,6 @@
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
       {{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
-    {{$scripts := readDir  ($.Param "dev.js_path" )}}
-    {{range $scripts}}
-      <script src="{{.Name  | add "/dist/js/"}}" defer></script>
-    {{end}}<style>.turbolinks-progress-bar {
-  height: 5px;
-  background-color: green;
-}</style>
-
   </head>
 
   <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
