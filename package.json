@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "algoliasearch": "^3.24.9",
+    "atomic-algolia": "^0.3.1",
     "fs": "0.0.1-security",
     "hugo-algolia": "^1.2.11"
   },
@@ -15,7 +16,8 @@
     "mkd": "mkdir public",
     "hugo-algolia": "hugo-algolia",
     "index": "hugo-algolia -s",
-    "build": "hugo && node lib/algolia.js"
+    "build": "hugo && node lib/algolia.js",
+    "algolia": "atomic-algolia"
   },
   "repository": {
     "type": "git",

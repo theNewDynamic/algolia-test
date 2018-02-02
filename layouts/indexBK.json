@@ -1,0 +1,7 @@
+{{$now := sub now.Unix 86400}}
+{{- $.Scratch.Add "index" slice -}}
+{{$content := where (where (where .Site.RegularPages "Type" "not in"  (slice "page" "json")) ".Lastmod.UTC.Unix" "ge" $now ) ".Params.private" "ne" true}}
+{{- range $content -}}
+{{- $.Scratch.Add "index" (dict "Section" .Section "title" .Title "objectID" .File.Path "tags" .Params.tags "description" .Params.description "content" .Plain) -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
